@@ -421,7 +421,6 @@ FodyWeavers.xsd
 !.vscode/extensions.json
 *.code-workspace
 
-
 #archivo txt
 CapaVistaERP.csproj.FileListAbsolute.txt
 ControllerLayer.csproj.FileListAbsolute.txt

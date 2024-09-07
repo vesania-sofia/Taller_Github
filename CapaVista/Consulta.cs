@@ -18,6 +18,7 @@ namespace CapaVista
         public Consulta()
         {
             InitializeComponent();
+            actualizardatagridview();
         }
 
         public void actualizardatagridview()

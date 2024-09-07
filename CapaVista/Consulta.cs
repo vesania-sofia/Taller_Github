@@ -49,11 +49,11 @@ namespace CapaVista
             try
             {
                 cn.saveEmpleado(codigo, nombre, puesto, departamento, estado);
-                MessageBox.Show("Registro Agregado correctamente :)");
+                MessageBox.Show("Registro agregado :)");
             }
             catch
             {
-                MessageBox.Show("Registro No ingresado");
+                MessageBox.Show("Registro no ingresado, hubo algún error");
             }
         }
 
@@ -112,11 +112,11 @@ namespace CapaVista
                 string estadotxt = txt_estado.Text;
                 int es = Convert.ToInt32(estadotxt);
                 ctriv.modificar(id, n, p, d, es);
-                MessageBox.Show("Registro Modificado Correctamente");
+                MessageBox.Show("Registro modificado");
             }
             catch
             {
-                MessageBox.Show("Registro No Modificado");
+                MessageBox.Show("Registro no modificado, hubo error");
             }
         }
     }

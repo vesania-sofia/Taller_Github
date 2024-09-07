@@ -37,6 +37,12 @@ namespace CapaVista
 
         }
 
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            actualizardatagridview();
+        }
+
         private void btn_ingresar_Click(object sender, EventArgs e)
         {
             string codigotext = txt_codigo.Text;
@@ -50,11 +56,11 @@ namespace CapaVista
             try
             {
                 cn.saveEmpleado(codigo, nombre, puesto, departamento, estado);
-                MessageBox.Show("Registro Agregado correctamente :)");
+                MessageBox.Show("Registro Insertado  :)");
             }
             catch
             {
-                MessageBox.Show("Registro No ingresado");
+                MessageBox.Show("Registro No ingresado, hubo error");
             }
         }
 
@@ -85,10 +91,10 @@ namespace CapaVista
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            actualizardatagridview();
-        }
+
+
+
+
 
         private void Dgv_consulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -97,7 +103,7 @@ namespace CapaVista
             txt_puesto.Text = Dgv_consulta.CurrentRow.Cells[2].Value.ToString();
             txt_departamento.Text = Dgv_consulta.CurrentRow.Cells[3].Value.ToString();
             txt_estado.Text = Dgv_consulta.CurrentRow.Cells[4].Value.ToString();
-       
+
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -113,12 +119,15 @@ namespace CapaVista
                 string estadotxt = txt_estado.Text;
                 int es = Convert.ToInt32(estadotxt);
                 ctriv.modificar(id, n, p, d, es);
-                MessageBox.Show("Registro Modificado Correctamente");
+                MessageBox.Show("Registro Modificado ");
             }
+
             catch
             {
-                MessageBox.Show("Registro No Modificado");
+                MessageBox.Show("Registro no modificado");
             }
         }
+
+
     }
 }

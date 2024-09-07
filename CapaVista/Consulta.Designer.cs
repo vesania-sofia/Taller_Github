@@ -74,6 +74,7 @@ namespace CapaVista
             // 
             // btn_ingresar
             // 
+            this.btn_ingresar.BackColor = System.Drawing.Color.YellowGreen;
             this.btn_ingresar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ingresar.Location = new System.Drawing.Point(688, 86);
             this.btn_ingresar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -81,7 +82,7 @@ namespace CapaVista
             this.btn_ingresar.Size = new System.Drawing.Size(133, 54);
             this.btn_ingresar.TabIndex = 2;
             this.btn_ingresar.Text = "Ingresar";
-            this.btn_ingresar.UseVisualStyleBackColor = true;
+            this.btn_ingresar.UseVisualStyleBackColor = false;
             this.btn_ingresar.Click += new System.EventHandler(this.btn_ingresar_Click);
             // 
             // txt_codigo
@@ -177,6 +178,7 @@ namespace CapaVista
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.button1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(852, 86);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -184,11 +186,12 @@ namespace CapaVista
             this.button1.Size = new System.Drawing.Size(133, 54);
             this.button1.TabIndex = 12;
             this.button1.Text = "Refrescar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.IndianRed;
             this.button2.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(515, 161);
             this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -196,11 +199,12 @@ namespace CapaVista
             this.button2.Size = new System.Drawing.Size(133, 54);
             this.button2.TabIndex = 13;
             this.button2.Text = "Eliminar";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.LimeGreen;
             this.button3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(688, 161);
             this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -208,7 +212,7 @@ namespace CapaVista
             this.button3.Size = new System.Drawing.Size(133, 54);
             this.button3.TabIndex = 14;
             this.button3.Text = "Modificar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Consulta
